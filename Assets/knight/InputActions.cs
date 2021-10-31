@@ -22,7 +22,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""name"": ""Move"",
                     ""type"": ""Value"",
                     ""id"": ""2468258a-e6d4-44ac-885d-a99a5473ace5"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Dpad"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -41,64 +41,17 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Run"",
+                    ""type"": ""Button"",
+                    ""id"": ""0f75be69-947c-41c5-8d86-01089dbec801"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": ""keyboard"",
-                    ""id"": ""1782abcd-5162-4032-8a96-cfb048b78eea"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": ""Press(behavior=2)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""3987a926-9bbf-45de-844c-72a3d7883665"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""(AZERTY) keyboard and mouse"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""7eb20585-8acc-402f-bd1f-a793513f56ff"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""(AZERTY) keyboard and mouse"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""1fd90a0e-0e64-4521-9e64-4949296a22ed"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""(AZERTY) keyboard and mouse"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""86338f50-39bc-4c5c-b0d0-565222eef08e"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""(AZERTY) keyboard and mouse"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
                 {
                     ""name"": """",
                     ""id"": ""2a8b2245-d615-427d-8495-eef3f274d938"",
@@ -140,6 +93,72 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": ""(AZERTY) keyboard and mouse"",
                     ""action"": ""CallCat"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""keyboard"",
+                    ""id"": ""80297673-aae9-4073-83d9-0f7c886e6579"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""8a16bb60-89af-42ad-82fd-db09aef80964"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""(AZERTY) keyboard and mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""b66cb31c-40b7-409f-a652-e1904aafc555"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""(AZERTY) keyboard and mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""2c957448-a2d7-402d-9ccb-e08ab9447588"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""(AZERTY) keyboard and mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""a3c77740-daff-41bc-ba63-211e337ad216"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""(AZERTY) keyboard and mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0616ea6b-a980-48b6-8240-c8005f50e7e7"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": ""(AZERTY) keyboard and mouse"",
+                    ""action"": ""Run"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -186,6 +205,7 @@ public class @InputActions : IInputActionCollection, IDisposable
         m_Knight_Move = m_Knight.FindAction("Move", throwIfNotFound: true);
         m_Knight_Jump = m_Knight.FindAction("Jump", throwIfNotFound: true);
         m_Knight_CallCat = m_Knight.FindAction("CallCat", throwIfNotFound: true);
+        m_Knight_Run = m_Knight.FindAction("Run", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -238,6 +258,7 @@ public class @InputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_Knight_Move;
     private readonly InputAction m_Knight_Jump;
     private readonly InputAction m_Knight_CallCat;
+    private readonly InputAction m_Knight_Run;
     public struct KnightActions
     {
         private @InputActions m_Wrapper;
@@ -245,6 +266,7 @@ public class @InputActions : IInputActionCollection, IDisposable
         public InputAction @Move => m_Wrapper.m_Knight_Move;
         public InputAction @Jump => m_Wrapper.m_Knight_Jump;
         public InputAction @CallCat => m_Wrapper.m_Knight_CallCat;
+        public InputAction @Run => m_Wrapper.m_Knight_Run;
         public InputActionMap Get() { return m_Wrapper.m_Knight; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -263,6 +285,9 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @CallCat.started -= m_Wrapper.m_KnightActionsCallbackInterface.OnCallCat;
                 @CallCat.performed -= m_Wrapper.m_KnightActionsCallbackInterface.OnCallCat;
                 @CallCat.canceled -= m_Wrapper.m_KnightActionsCallbackInterface.OnCallCat;
+                @Run.started -= m_Wrapper.m_KnightActionsCallbackInterface.OnRun;
+                @Run.performed -= m_Wrapper.m_KnightActionsCallbackInterface.OnRun;
+                @Run.canceled -= m_Wrapper.m_KnightActionsCallbackInterface.OnRun;
             }
             m_Wrapper.m_KnightActionsCallbackInterface = instance;
             if (instance != null)
@@ -276,6 +301,9 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @CallCat.started += instance.OnCallCat;
                 @CallCat.performed += instance.OnCallCat;
                 @CallCat.canceled += instance.OnCallCat;
+                @Run.started += instance.OnRun;
+                @Run.performed += instance.OnRun;
+                @Run.canceled += instance.OnRun;
             }
         }
     }
@@ -303,5 +331,6 @@ public class @InputActions : IInputActionCollection, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnCallCat(InputAction.CallbackContext context);
+        void OnRun(InputAction.CallbackContext context);
     }
 }

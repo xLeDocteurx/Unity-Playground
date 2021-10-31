@@ -9,12 +9,17 @@ public class Knight : MonoBehaviour
     public Animator anim;
     public CharacterController controller;
     [Space]
+    public Camera cam;
+    [Space]
     public float playerWalkSpeed = 3f;
     public float playerRunSpeed = 6f;
+    public float walkingTurnSmoothTime = 0.1f;
+    public float runningTurnSmoothTime = 0.05f;
     [Space]
     public Vector2 vector;
     float turnSmoothVelocity;
-    public float turnSmoothTime = 0.1f;
+    [Space]
+    public Vector3 test;
 
     void Start()
     {
@@ -27,21 +32,30 @@ public class Knight : MonoBehaviour
     void Update()
     {
         this.updateMovement();
-        this.updateRotation();
     }
 
     private void updateMovement()
     {
-        this.controller.Move(new Vector3(this.vector.x, 0, this.vector.y) * Time.deltaTime * this.playerWalkSpeed);
-    }
+        if (this.controller.velocity.x == 0 && this.controller.velocity.z == 0)
+        {
+            this.anim.SetBool("isMoving", false);
+        }
+        else
+        {
+            this.anim.SetBool("isMoving", true);
+        }
 
-    private void updateRotation()
-    {
         if (this.vector.x != 0 || this.vector.y != 0)
         {
-            float targetAngle = Mathf.Atan2(this.vector.x, this.vector.y) * Mathf.Rad2Deg;
-            float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref this.turnSmoothVelocity, this.turnSmoothTime);
+            float turnSmoothTime = this.anim.GetBool("isRunning") ? this.runningTurnSmoothTime : this.walkingTurnSmoothTime;
+            float playerSpeed = this.anim.GetBool("isRunning") ? this.playerRunSpeed : this.playerWalkSpeed;
+
+            float targetAngle = Mathf.Atan2(this.vector.x, this.vector.y) * Mathf.Rad2Deg + cam.transform.eulerAngles.y;
+            float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref this.turnSmoothVelocity, turnSmoothTime);
+            Vector3 direction = Quaternion.Euler(0f, rotation, 0f) * Vector3.forward;
+
             this.transform.rotation = Quaternion.Euler(0f, rotation, 0f);
+            this.controller.Move(direction * Time.deltaTime * playerSpeed);
         }
     }
 
@@ -53,13 +67,28 @@ public class Knight : MonoBehaviour
         }
         else if (context.performed)
         {
-            //this.anim.SetBool("isMoving", false);
         }
         else if (context.canceled)
         {
             this.anim.SetBool("isMoving", false);
         }
-        this.vector = (context.ReadValueAsObject() as Vector2?).Value;
+        this.vector = context.ReadValue<Vector2>();
+    }
+
+    public void run(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            this.anim.SetBool("isRunning", true);
+        }
+        else if (context.performed)
+        {
+        }
+        else if (context.canceled)
+        {
+            this.anim.SetBool("isRunning", false);
+        }
+
     }
 
     public void jump(InputAction.CallbackContext context)

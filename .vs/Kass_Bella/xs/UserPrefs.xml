@@ -1,14 +1,16 @@
 ﻿<Properties StartupConfiguration="{3A7F2A43-AB9F-812B-C4AC-0E11562B88C6}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/knight/Knight.cs">
     <Files>
-      <File FileName="Assets/knight/Knight.cs" Line="40" Column="32" />
+      <File FileName="Assets/knight/Knight.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Kass_Bella" expanded="True">
-            <Node name="Assets" expanded="True" selected="True">
-              <Node name="knight" expanded="True" />
+            <Node name="Assets" expanded="True">
+              <Node name="knight" expanded="True">
+                <Node name="Knight.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -17,7 +19,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9e09af69-9851-49de-9d8d-7c4291c7c2cc" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fc7b581d-3d8f-4576-b506-2e24e8b80273" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
