@@ -6,7 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Screens/HomeLoadingScreen.unity
+    guid: b48e98395cfb045398ebcc30347f6a48
+  - enabled: 1
+    path: Assets/Scenes/Screens/HomeScreen.unity
+    guid: 27b3c810067224e04b0d12ec9d886c4d
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/Screens/LoadingScreen.unity
+    guid: 7cba3aa6b14ec487282dd713e9b77348
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: f111b94fb37c8462dae960f5bfc9280a, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: e1a0cf7e89ba3484b956ae9780ff0477, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 97a007283f8a94a02984ae21054a262b, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: a21533c6d81a84c548bbb723cd708666, type: 2}

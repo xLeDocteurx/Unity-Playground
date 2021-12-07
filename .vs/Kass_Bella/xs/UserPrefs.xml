@@ -1,15 +1,33 @@
 ﻿<Properties StartupConfiguration="{3A7F2A43-AB9F-812B-C4AC-0E11562B88C6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/knight/Knight.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/LoadSceneScreen.cs">
     <Files>
-      <File FileName="Assets/knight/Knight.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UI/LoadSceneScreen.cs" Line="13" Column="6" />
+      <File FileName="Library/PackageCache/com.unity.render-pipelines.universal@12.1.1/Editor/UniversalRenderPipelineAsset/UniversalRenderPipelineAssetUI.Drawers.cs" Line="464" Column="10" />
+      <File FileName="Assets/Scripts/Player/JumpStart.cs" />
+      <File FileName="Assets/Scripts/Player/Climb.cs" />
+      <File FileName="Assets/Scripts/Player/PlayerLedgeChecker.cs" />
+      <File FileName="Assets/Scripts/Player/IsGrounded.cs" />
+      <File FileName="Assets/Scripts/Player/Movement.cs" />
+      <File FileName="Assets/Scripts/Player/Jump.cs" />
+      <File FileName="Assets/Scripts/Player/GrabLedge.cs" />
+      <File FileName="Assets/Interract.cs" />
+      <File FileName="Assets/Scripts/Player/PlayerInterractionsChecker.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Kass_Bella" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="knight" expanded="True">
-                <Node name="Knight.cs" selected="True" />
+              <Node name="Joystick Pack" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="Joysticks" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Scripts" expanded="True">
+                <Node name="Player" expanded="True" />
+                <Node name="UI" expanded="True">
+                  <Node name="LoadSceneScreen.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -19,7 +37,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fc7b581d-3d8f-4576-b506-2e24e8b80273" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4ebf841d-99a0-430e-826d-35ce6e59ecca" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
